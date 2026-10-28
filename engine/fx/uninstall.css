@@ -1,0 +1,7 @@
+      /* uninstall (fx_uninstall) */
+      .uninstall-defs { position: absolute; left: 0; top: 0; }
+      .uninstall-bar { position: absolute; border-radius: 22px; background: rgba(245,245,247,.94); box-shadow: 0 8px 32px rgba(0,0,0,.47); direction: rtl; }
+      .uninstall-title { position: absolute; transform: translateY(-50%); white-space: nowrap; font-family: "Heebo", sans-serif; font-weight: 600; line-height: 1; color: #161618; }
+      .uninstall-track { position: absolute; border-radius: 8px; background: #d7d7dc; }
+      .uninstall-fill { position: absolute; right: 0; top: 0; height: 100%; border-radius: 8px; background: #007aff; }
+      .uninstall-pct { position: absolute; transform: translateY(-50%); direction: ltr; white-space: nowrap; font-family: "Heebo", sans-serif; font-weight: 600; line-height: 1; color: #6e6e6e; }

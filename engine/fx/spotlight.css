@@ -1,0 +1,5 @@
+      /* spotlight (fx_spotlight): word = the original 'serif' -> Heebo 300, glow = stroked copy blurred 26px, composited twice */
+      .spotlight-word { position: absolute; left: 0; width: 1080px; direction: rtl; text-align: center; white-space: nowrap;
+                        font-family: "Heebo", sans-serif; font-weight: 300; line-height: 0.95; letter-spacing: -0.01em; }
+      .spotlight-glow, .spotlight-txt { position: absolute; left: 0; top: 0; width: 1080px; text-align: center; }
+      .spotlight-glow { filter: blur(26px); }

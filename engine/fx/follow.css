@@ -1,0 +1,12 @@
+      /* follow: Instagram suggested-for-you card */
+      .ig-card { position: absolute; border-radius: 26px; background: #fff; box-shadow: 0 18px 50px rgba(0,0,0,.28); padding: 34px 30px 30px; text-align: center; direction: rtl; font-family: "Heebo", sans-serif; color: #000; }
+      .ig-x { position: absolute; left: 22px; top: 16px; font-size: 28px; color: #8e8e8e; }
+      .ig-ring { width: 180px; height: 180px; margin: 0 auto 18px; border-radius: 50%; padding: 6px; background: conic-gradient(from 200deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #feda75); }
+      .ig-pic { width: 168px; height: 168px; border-radius: 50%; border: 5px solid #fff; background-color: #ddd; box-sizing: border-box; }
+      .ig-name { font-weight: 700; font-size: 38px; line-height: 1.2; }
+      .ig-handle { font-weight: 400; font-size: 30px; color: #737373; direction: ltr; }
+      .ig-sub { font-size: 26px; color: #737373; margin: 8px 0 22px; }
+      .ig-btn { position: relative; height: 72px; border-radius: 16px; background: #0095f6; font-weight: 700; font-size: 32px; }
+      .ig-btn span { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+      .ig-a { color: #fff; } .ig-b { color: #000; }
+      .ig-tap { position: absolute; left: 50%; bottom: 36px; width: 120px; height: 120px; margin-left: -60px; border-radius: 50%; background: #000; pointer-events: none; }

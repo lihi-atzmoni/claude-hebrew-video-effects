@@ -1,0 +1,10 @@
+      /* tier (fx_tier_list): title = 'serif' -> Heebo 300 yellow, shadow 8 -> blur 16px; board rgba(22,22,26,240), shadowed(18,10,120) */
+      .tier-title { position: absolute; left: 0; top: 0; white-space: nowrap; direction: rtl; font-family: "Heebo", sans-serif; font-weight: 300;
+                    line-height: 1; color: rgb(255, 214, 10); text-shadow: 0 4px 16px rgba(0,0,0,.63); }
+      .tier-board { position: absolute; left: 0; top: 0; background: rgba(22, 22, 26, 0.94); box-shadow: 0 10px 36px rgba(0,0,0,.47); }
+      .tier-lab { position: absolute; text-align: center; font-family: "Heebo", sans-serif; font-weight: 800; color: rgb(20, 20, 22); }
+      .tier-bar { position: absolute; background: rgb(40, 40, 46); }
+      .tier-chip { position: absolute; white-space: nowrap; direction: rtl; background: rgb(78, 78, 86); color: rgb(225, 225, 230);
+                   font-family: "Heebo", sans-serif; font-weight: 500; }
+      .tier-tile { position: absolute; left: 0; top: 0; background: rgb(217, 119, 87); box-shadow: 0 4px 16px rgba(0,0,0,.39); text-align: center;
+                   white-space: nowrap; color: #fff; font-family: "Heebo", sans-serif; font-weight: 800; }

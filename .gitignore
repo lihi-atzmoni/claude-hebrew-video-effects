@@ -1,0 +1,13 @@
+test/
+*.mp4
+*.mov
+*.webm
+snapshots/
+renders/
+track.json
+assets/
+!/assets/
+.DS_Store
+review/
+.claude/
+__pycache__/

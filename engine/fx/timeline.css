@@ -1,0 +1,14 @@
+      /* timeline (the original red_timeline) */
+      .timeline-dot { position: absolute; left: 0; top: 0; border-radius: 50%; }
+      .timeline-rec { position: absolute; white-space: nowrap; direction: ltr; font-family: ui-monospace, Menlo, monospace; font-weight: 700; }
+      .timeline-ti { position: absolute; white-space: nowrap; direction: rtl; font-family: "Heebo", sans-serif; font-weight: 800; color: #fff;
+                     text-shadow: 0 5px 20px rgba(0,0,0,.63); }
+      .timeline-su { position: absolute; white-space: nowrap; direction: rtl; font-family: "Heebo", sans-serif; font-weight: 500; }
+      .timeline-panel { position: absolute; top: 0; }
+      .timeline-panel > div { position: absolute; left: 0; top: 0; }
+      .timeline-glowbox { overflow: hidden; }
+      .timeline-glow { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+      .timeline-glow > div { position: absolute; }
+      .timeline-fill { background: rgba(14,10,10,.843); border: 2px solid rgba(255,70,60,.353); }
+      .timeline-panel > .timeline-tc { white-space: nowrap; font-family: ui-monospace, Menlo, monospace; font-weight: 700; color: rgb(170,170,175); }
+      .timeline-line { position: absolute; background: #fff; }

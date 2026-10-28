@@ -1,0 +1,81 @@
+      @font-face { font-family: "Rubik"; src: url("fonts/Rubik.ttf"); font-weight: 300 900; }
+      @font-face { font-family: "Heebo"; src: url("fonts/Heebo.ttf"); font-weight: 100 900; }
+      @font-face { font-family: "FrankRuhl"; src: url("fonts/FrankRuhlLibre-Black.ttf"); font-weight: 900; }
+      @font-face { font-family: "Gveret"; src: url("fonts/GveretLevin-Regular.ttf"); }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #000; }
+      #shake, #cam, #front { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+      #cam video { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      #src { z-index: 0; } .fxb { z-index: 5; } .fxv { z-index: 8; } .matte { z-index: 10; } .fxc { z-index: 15; }
+      #front { z-index: 20; }
+      .fxl { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; pointer-events: none; }
+      .wrap, .full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+      .pin { position: absolute; left: 0; top: 0; width: 0; height: 0; }
+      .rtl { direction: rtl; }
+      .word { position: absolute; left: 0; width: 1080px; text-align: center; direction: rtl; font-family: "Rubik", sans-serif;
+              font-weight: 900; line-height: 0.95; white-space: nowrap; letter-spacing: -0.03em; }
+      .serif, .thin { font-family: "Heebo", sans-serif; font-weight: 300; letter-spacing: -0.01em; }  /* the original thin serif (Instrument Serif) */
+      .lbl { position: absolute; left: 0; top: 1745px; width: 1080px; text-align: center; direction: rtl; font-family: "Rubik", sans-serif;
+             font-weight: 800; font-size: 66px; color: #fff; letter-spacing: -0.02em; text-shadow: 0 3px 18px rgba(0,0,0,.55), 0 1px 3px rgba(0,0,0,.5); }
+      .lbl b { color: #ffd84d; font-weight: 800; }
+      /* glass card */
+      .glass { position: absolute; border-radius: 40px; background: rgba(22, 22, 26, 0.62); backdrop-filter: blur(22px) saturate(1.4);
+               border: 1.5px solid rgba(255,255,255,.18); box-shadow: 0 30px 80px rgba(0,0,0,.35); color: #fff; direction: rtl;
+               font-family: "Heebo", sans-serif; }
+      .glass.light { background: rgba(255, 252, 246, 0.78); color: #141414; border-color: rgba(255,255,255,.7); }
+      /* messages */
+      .msg { position: absolute; left: 70px; width: 940px; height: 160px; border-radius: 42px; background: rgba(250, 246, 238, 0.86);
+             backdrop-filter: blur(24px) saturate(1.6); box-shadow: 0 18px 60px rgba(255, 220, 190, .35), 0 8px 30px rgba(0,0,0,.18);
+             display: flex; align-items: center; gap: 26px; padding: 0 30px; direction: rtl; font-family: "Heebo", sans-serif; color: #141414; }
+      .msg-ic { width: 92px; height: 92px; border-radius: 24px; background: linear-gradient(#6af07b, #22c03b); flex: none; position: relative; }
+      .msg-ic::after { content: ""; position: absolute; left: 18px; top: 22px; width: 56px; height: 44px; border-radius: 50%; background: #fff; }
+      .msg-tx { flex: 1; min-width: 0; } .msg-tx b { display: flex; justify-content: space-between; font-size: 34px; font-weight: 800; }
+      .msg-tx b s { text-decoration: none; font-weight: 500; color: #8a8a8a; font-size: 28px; }
+      .msg-tx p { font-size: 38px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      /* graph */
+      .gr-lbl { font-size: 34px; font-weight: 600; opacity: .85; padding: 34px 40px 0; }
+      .gr-num { font-family: "Rubik"; font-weight: 900; font-size: 112px; line-height: 1.05; padding: 0 40px; direction: ltr; text-align: right; }
+      .gr-svg { position: absolute; left: 0; bottom: 0; }
+      /* toggles */
+      .tg-h { font-size: 40px; font-weight: 800; padding: 30px 40px 12px; }
+      .tg-row { display: flex; align-items: center; justify-content: space-between; height: 96px; margin: 0 40px; font-size: 38px; font-weight: 500;
+                border-top: 1.5px solid rgba(0,0,0,.08); }
+      .tg-sw { position: relative; width: 104px; height: 62px; border-radius: 31px; background: #e3e3e6; flex: none; }
+      .tg-on { position: absolute; inset: 0; border-radius: 31px; background: #34c759; }
+      .tg-k { position: absolute; top: 4px; left: 4px; width: 54px; height: 54px; border-radius: 50%; background: #fff; box-shadow: 0 3px 8px rgba(0,0,0,.25); }
+      /* led */
+      .led { position: absolute; left: 0; width: 1080px; text-align: center; direction: rtl; font-family: "Rubik"; font-weight: 900; line-height: 1; white-space: nowrap; }
+      .led i { font-style: normal; display: none; }
+      .led.dots { -webkit-mask-image: radial-gradient(circle, #000 58%, transparent 64%); -webkit-mask-size: 15px 15px; }
+      .led.glow { filter: blur(18px); opacity: .9; }
+      /* glitter */
+      .rays { position: absolute; width: 2400px; height: 2400px; border-radius: 50%;
+              background: repeating-conic-gradient(from 0deg, rgba(255, 214, 120, .38) 0deg 5deg, rgba(255, 214, 120, 0) 5deg 15deg);
+              -webkit-mask-image: radial-gradient(circle, #000 8%, rgba(0,0,0,.5) 30%, transparent 62%); }
+      .gold { background: linear-gradient(180deg, #fff7d6 10%, #ffd45c 45%, #c98a1c 85%); -webkit-background-clip: text; background-clip: text; color: transparent;
+              filter: drop-shadow(0 0 22px rgba(255, 196, 80, .75)); }
+      .spark { position: absolute; color: #fff4d6; line-height: 1; text-shadow: 0 0 18px #ffd27a; }
+      /* lineup */
+      .ltile { position: absolute; left: -57px; top: -71px; width: 114px; height: 142px; border-radius: 18px; background: rgba(24, 24, 28, .88);
+               border: 2px solid rgba(255,255,255,.24); box-shadow: 0 5px 16px rgba(0,0,0,.35); text-align: center; color: #fff; }
+      .ltile s { display: block; text-decoration: none; font-family: "Heebo"; font-weight: 300; font-size: 48px; line-height: 1; margin-top: 6px; color: #f4e9d8; }
+      .ltile span { position: absolute; left: 4px; right: 4px; top: 84px; direction: rtl; font-family: "Heebo"; font-weight: 600; font-size: 17px; line-height: 1.15; color: rgba(255,255,255,.92); }
+      /* bill */
+      .bill-clip { position: absolute; overflow: hidden; }
+      /* tier */
+      .tier-chip { position: absolute; height: 64px; border-radius: 14px; background: #d97757; color: #fff; font-family: "Rubik"; font-weight: 800; font-size: 34px; line-height: 64px; padding: 0 24px; direction: rtl; box-shadow: 0 10px 30px rgba(217,119,87,.5); }
+      /* noise cards */
+      .ncard { position: absolute; left: -86px; top: -112px; width: 172px; height: 224px; border-radius: 10px;
+               border: 3px solid rgba(255, 248, 232, .95); box-shadow: 0 8px 20px rgba(0,0,0,.35); }
+      .ncard i { position: absolute; inset: 0; border-radius: 7px; background-size: cover; background-position: center 30%; }
+      .ncard b { position: absolute; left: -22px; top: -22px; width: 56px; height: 56px; border-radius: 50%; background: #f5d33f; color: #1d1a12;
+                 font-family: "Rubik"; font-weight: 800; font-size: 28px; line-height: 56px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,.3); }
+      /* locked-on */
+      .lk { position: absolute; border: 0 solid #fff; filter: drop-shadow(0 2px 3px rgba(0,0,0,.45)); }
+      .lk0 { border-top-style: solid; border-left-style: solid; border-right: 0; border-bottom: 0; border-top-left-radius: 4px; }
+      .lk1 { border-top-style: solid; border-right-style: solid; border-left: 0; border-bottom: 0; border-top-right-radius: 4px; transform: translateX(-100%); }
+      .lk2 { border-bottom-style: solid; border-left-style: solid; border-right: 0; border-top: 0; border-bottom-left-radius: 4px; transform: translateY(-100%); }
+      .lk3 { border-bottom-style: solid; border-right-style: solid; border-left: 0; border-top: 0; border-bottom-right-radius: 4px; transform: translate(-100%, -100%); }
+      .lk-tag { position: absolute; left: -120px; width: 240px; text-align: center; }
+      .lk-tag span { display: inline-block; padding: 4px 14px; border-radius: 20px; background: rgba(255,255,255,.92); font-family: "Rubik"; font-weight: 700; font-size: 26px; color: #161618; direction: rtl; }

@@ -1,0 +1,12 @@
+      /* pastel (the original pastel-word) */
+      .pastel-veil { background: rgba(255,255,255,.86); -webkit-backdrop-filter: grayscale(1) brightness(1.5714); backdrop-filter: grayscale(1) brightness(1.5714); }
+      .pastel-grad { background: linear-gradient(156.04deg, rgb(178.5,170.85,247.35), rgb(237.15,229.5,255)); mix-blend-mode: multiply; }
+      .pastel-word { font-family: "Heebo", sans-serif; font-weight: 800; line-height: 1; letter-spacing: 0; color: #fff; text-shadow: 0 12px 48px rgba(0,0,0,.235); }
+      .pastel-card { position: absolute; background: rgba(255,255,255,.973); box-shadow: 0 8px 36px rgba(0,0,0,.353); direction: rtl; font-family: "Heebo", sans-serif; }
+      .pastel-card > div { position: absolute; white-space: nowrap; }
+      .pastel-av { border-radius: 50%; background-repeat: no-repeat; }
+      .pastel-name { font-weight: 800; color: rgb(20,20,22); }
+      .pastel-handle { font-weight: 500; color: rgb(140,140,150); }
+      .pastel-follow { font-weight: 800; }
+      .pastel-cur { position: absolute; left: 0; top: 0; line-height: 0; }
+      .pastel-cur svg { display: block; overflow: visible; filter: drop-shadow(0 3px 12px rgba(0,0,0,.43)); }

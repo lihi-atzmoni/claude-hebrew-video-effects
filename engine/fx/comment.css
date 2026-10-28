@@ -1,0 +1,23 @@
+      /* comment (the original comment_sheet): dark sheet (38,38,40,248) r30 + shadow (22, 10, 120); 'uib'/'uim' -> Heebo 800/500 */
+      .comment-sheet { position: absolute; background: rgba(38,38,40,.973); border-radius: 30px; box-shadow: 0 10px 44px rgba(0,0,0,.47);
+                       direction: rtl; font-family: "Heebo", sans-serif; color: rgb(245,245,245); overflow: visible; }
+      .comment-g { position: absolute; left: 0; top: 0; width: 740px; height: 450px; }
+      .comment-abs, .comment-t, .comment-grab, .comment-hr, .comment-heart, .comment-face, .comment-chip, .comment-field { position: absolute; }
+      .comment-t { white-space: nowrap; line-height: normal; }
+      .comment-t.mm { transform: translate(-50%, -50%); }
+      .comment-t.lm, .comment-t.rm { transform: translateY(-50%); }
+      .comment-sheet .uib { font-weight: 800; } .comment-sheet .uim { font-weight: 500; }
+      .comment-sheet .grey { color: rgb(160,160,166); }
+      .comment-grab { width: 64px; height: 6px; border-radius: 3px; background: rgb(110,110,116); }
+      .comment-hr { left: 0; width: 740px; height: 2px; background: rgb(60,60,64); }
+      .comment-av { border-radius: 50%; background: rgb(233,90,140); color: #fff; font-weight: 800; text-align: center; }
+      .comment-heart { width: 30px; height: 30px; margin-left: -15px; margin-top: -15px; }
+      .comment-heart svg { width: 100%; height: 100%; display: block; } .comment-heart polygon { fill: rgb(255,48,64); }
+      .comment-face { width: 34px; height: 34px; border-radius: 50%; overflow: hidden; }
+      .comment-face canvas { width: 100%; height: 100%; display: block; }
+      .comment-emo { font-family: "Apple Color Emoji", sans-serif; line-height: 1; }
+      .comment-chip { height: 25px; border-radius: 12.5px; background: rgb(255,214,10); color: rgb(20,20,22); font-weight: 800; font-size: 19px;
+                      display: flex; align-items: center; gap: 11px; padding: 0 10px 0 11px; white-space: nowrap; line-height: 1; }
+      .comment-chip .comment-emo { font-size: 20px; }
+      .comment-field { border-radius: 24px; background: rgb(54,54,58); }
+      .comment-caret { display: inline-block; width: 2px; height: 28px; background: rgb(0,149,246); margin-right: 3px; vertical-align: middle; }

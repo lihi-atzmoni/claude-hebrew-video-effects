@@ -1,0 +1,5 @@
+      /* keys (fx_shortcut_rain) */
+      .keys-cap { position: absolute; background: rgb(190,190,198); box-shadow: 0 6px 16px rgba(0,0,0,.39); }
+      .keys-cap i { position: absolute; left: 4px; top: 3px; background: rgb(246,246,248); }
+      .keys-cap b { position: absolute; left: 0; width: 100%; text-align: center; transform: translateY(-50%); line-height: 1; white-space: nowrap;
+                    font-family: ui-monospace, Menlo, monospace; font-weight: 700; color: #161618; }

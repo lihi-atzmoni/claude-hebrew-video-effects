@@ -1,0 +1,7 @@
+      /* pause (fx_pause_point) */
+      .pause-still { background-size: cover; background-position: center; }
+      .pause-badge { position: absolute; border-radius: 16px; background: rgba(0,0,0,.59); }
+      .pause-bar { position: absolute; background: rgba(255,255,255,.9); }
+      .pause-svg { position: absolute; left: 0; top: 0; overflow: visible; }
+      .pause-label { position: absolute; left: 0; top: 0; transform: translate(-50%, -50%); white-space: nowrap; direction: rtl;
+                     font-family: "Gveret", sans-serif; line-height: 1; text-shadow: 0 3px 12px rgba(0,0,0,.63); }

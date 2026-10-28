@@ -1,0 +1,12 @@
+      /* checklist (fx_checklist): liquid glass = room blurred (sigma 9) and x0.9, faint top-lit sheen, specular rim brightest top-left,
+         soft inner glow; shadowed(24, 12, 120). Text: 'uib' -> Heebo 800, 'uim' -> Heebo 500, 'mono' -> Rubik 700 */
+      .checklist-glass { position: absolute; left: 0; top: 0; direction: rtl; overflow: hidden;
+                         backdrop-filter: blur(9px) brightness(0.9); -webkit-backdrop-filter: blur(9px) brightness(0.9);
+                         background: linear-gradient(rgba(255,255,255,.021), rgba(255,255,255,.006));
+                         box-shadow: 0 12px 48px rgba(0,0,0,.47), inset 0 2px 1px -0.5px rgba(255,255,255,.75), inset 2px 0 1px -0.5px rgba(255,255,255,.6),
+                                     inset 0 -1.5px 1px -0.5px rgba(255,255,255,.16), inset -1.5px 0 1px -0.5px rgba(255,255,255,.22), inset 0 0 30px rgba(255,255,255,.1); }
+      .checklist-title { position: absolute; white-space: nowrap; font-family: "Heebo", sans-serif; font-weight: 800; color: #fff; }
+      .checklist-count { position: absolute; white-space: nowrap; font-family: "Heebo", sans-serif; font-weight: 500; color: rgb(170, 170, 176); }
+      .checklist-rule { position: absolute; background: rgba(255,255,255,.118); }
+      .checklist-txt { position: absolute; white-space: nowrap; font-family: "Heebo", sans-serif; font-weight: 800; }
+      .checklist-meta { position: absolute; white-space: nowrap; font-family: "Rubik", ui-monospace, Menlo, monospace; font-weight: 700; }

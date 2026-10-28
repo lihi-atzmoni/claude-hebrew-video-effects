@@ -1,0 +1,32 @@
+      /* studio (the original render-studio look) */
+      .st-title { left: 0; width: 1080px; top: 22px; text-align: center; font-family: "Heebo", sans-serif; font-weight: 900; font-size: 74px;
+                  color: #17171a; direction: rtl; white-space: nowrap; }
+      .st-title span { font-weight: 300; }
+      .st-card { left: 45px; top: 130px; width: 990px; height: 790px; border-radius: 30px; overflow: hidden;
+                 background: linear-gradient(160deg, #331836, #23102a); border: 2px solid rgba(239,95,147,.3); box-shadow: 0 24px 60px rgba(40,10,40,.35); }
+      .st-card > div { position: absolute; }
+      .st-dot { top: 32px; width: 16px; height: 16px; border-radius: 50%; }
+      .st-head { top: 22px; font-family: ui-monospace, Menlo, monospace; font-weight: 700; font-size: 26px; letter-spacing: 2px; color: #e9c9d6;
+                 direction: rtl; white-space: nowrap; }
+      .st-fmt { color: #f3a27c; direction: ltr; }
+      .st-thumb { right: 30px; top: 86px; width: 150px; height: 262px; border-radius: 14px; background-size: cover; background-position: center 20%; }
+      .st-thumb b { position: absolute; left: 8px; bottom: 8px; font-family: ui-monospace, Menlo, monospace; font-size: 17px; color: #fff;
+                    background: rgba(0,0,0,.55); border-radius: 6px; padding: 2px 6px; }
+      .st-row { right: 200px; width: 760px; height: 44px; border-radius: 8px; background: rgba(255,255,255,.05); }
+      .st-row > div { position: absolute; top: 0; line-height: 44px; white-space: nowrap; direction: rtl; }
+      .st-k { right: 18px; font-family: "Heebo", sans-serif; font-weight: 500; font-size: 26px; color: #d9c4cf; }
+      .st-v { left: 18px; font-family: "Heebo", sans-serif; font-weight: 500; font-size: 25px; color: rgba(255,255,255,.32); }
+      .st-v.done { color: #fff; font-weight: 700; }
+      .st-v.done::after { content: " ✓"; color: #f3a27c; }
+      .st-pbar { right: 200px; top: 362px; width: 760px; height: 8px; border-radius: 4px; background: rgba(255,255,255,.08); overflow: hidden; }
+      .st-pbar i, .st-prog i { position: absolute; right: 0; top: 0; height: 100%; background: linear-gradient(270deg, #ef5f93, #f3a27c); border-radius: 4px; }
+      .st-tl { right: 22px; width: 150px; text-align: right; font-family: ui-monospace, Menlo, "Heebo", monospace; font-weight: 700; font-size: 21px;
+               letter-spacing: 1px; color: #c9b3bf; direction: rtl; white-space: nowrap; }
+      .st-frame { width: 93px; height: 54px; border-radius: 6px; background-size: cover; background-position: center 25%; }
+      .st-clip { height: 42px; border-radius: 8px; background: linear-gradient(270deg, #ef5f93, #f6a27d); color: #2a1020; font-family: "Heebo", sans-serif;
+                 font-weight: 700; font-size: 22px; line-height: 42px; padding-right: 14px; box-sizing: border-box; direction: rtl; white-space: nowrap; }
+      .st-g1 { background: linear-gradient(270deg, #6b2a8a, #ef5f93); color: #fff; }
+      .st-wave { width: 5px; border-radius: 3px; background: #ef7aa5; opacity: .8; }
+      .st-play { top: 380px; width: 4px; height: 280px; background: #ff4f8f; box-shadow: 0 0 12px #ff4f8f; }
+      .st-prog { right: 30px; top: 712px; width: 790px; height: 16px; border-radius: 8px; background: rgba(255,255,255,.08); overflow: hidden; }
+      .st-pct { left: 30px; top: 688px; font-family: "Rubik", sans-serif; font-weight: 800; font-size: 56px; color: #f3a27c; }

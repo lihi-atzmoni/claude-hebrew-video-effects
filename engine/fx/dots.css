@@ -1,0 +1,2 @@
+      /* dots (fx_dot_reveal): full-frame canvas over everything, faded out by the original final cross-fade */
+      .dots-cv { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }

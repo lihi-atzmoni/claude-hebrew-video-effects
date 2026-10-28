@@ -1,0 +1,8 @@
+      /* phones (fx_phone_fan): headline 'uib' -> Heebo 800; white lines shadow 9 -> blur 18px; last line dark on a white box */
+      .phones-line { position: absolute; left: 0; top: 0; white-space: nowrap; direction: rtl; font-family: "Heebo", sans-serif; font-weight: 800;
+                     line-height: 1; color: #fff; text-shadow: 0 4.5px 18px rgba(0,0,0,.63); }
+      .phones-line.last { color: rgb(16, 16, 18); text-shadow: none; }
+      .phones-box { position: absolute; left: 0; top: 0; background: #fff; }
+      .phones-phone { position: absolute; left: 0; top: 0; background: rgb(14, 14, 16); box-shadow: 0 8px 28px rgba(0,0,0,.47); }
+      .phones-scr { position: absolute; background-size: cover; background-position: center; outline: 2px solid rgba(0,0,0,.27); outline-offset: -2px; }
+      .phones-notch { position: absolute; background: #000; }

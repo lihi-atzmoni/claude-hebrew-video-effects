@@ -1,0 +1,14 @@
+      /* widgets: the original liquid glass (glass(), liquid=True): light blur (sigma ~8), darkened room (x0.84 +0.045), faint top-to-bottom
+         white tint, a specular rim lit from the top-left (bright top/left, faint bottom/right), a soft inner edge glow and a red/blue fringe */
+      .widgets-glass { position: absolute; overflow: hidden; backdrop-filter: blur(8px) brightness(0.88); -webkit-backdrop-filter: blur(8px) brightness(0.88);
+                       background: linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.03));
+                       box-shadow: inset 0 0 30px rgba(255,255,255,.18), inset 2px 1px 3px -2px rgba(255,70,70,.35), inset -2px -1px 3px -2px rgba(70,120,255,.35); }
+      .widgets-glass::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 2.5px; pointer-events: none;
+                       background: linear-gradient(143deg, rgba(255,255,255,.85) 0%, rgba(255,255,255,.62) 30%, rgba(255,255,255,.2) 62%, rgba(255,255,255,.08) 100%);
+                       -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; }
+      .widgets-glass canvas { position: absolute; left: 0; top: 0; }
+      .widgets-glass.pill { backdrop-filter: blur(8px) brightness(0.92); -webkit-backdrop-filter: blur(8px) brightness(0.92); background: rgba(255,255,255,.02);
+                       box-shadow: 0 6px 28px rgba(0,0,0,.27), inset 0 0 30px rgba(255,255,255,.18), inset 2px 1px 3px -2px rgba(255,70,70,.35), inset -2px -1px 3px -2px rgba(70,120,255,.35);
+                       overflow: visible; display: flex; align-items: center; justify-content: center; direction: rtl; white-space: nowrap; color: #fff; }
+      .widgets-glass.pill span { font-family: "Heebo", sans-serif; font-weight: 500; }
+      .widgets-glass.pill b { font-family: "Heebo", sans-serif; font-weight: 800; color: rgb(255,176,146); }

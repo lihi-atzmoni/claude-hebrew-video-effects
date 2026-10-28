@@ -1,0 +1,4 @@
+      /* mosaic: photo blocks over the frame + big stacked words */
+      .mos-cell { position: absolute; background-size: cover; background-position: center; background-color: #111; }
+      .mos-words { position: absolute; left: 0; width: 1080px; text-align: center; direction: rtl; font-family: "Heebo", sans-serif; font-weight: 800;
+                   line-height: 0.98; color: #fff; letter-spacing: -0.02em; white-space: nowrap; }

@@ -1,0 +1,13 @@
+      /* film (fx_reel_frame) with real Instagram reel chrome */
+      .film-bg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; opacity: 0; }
+      .film-icons { position: absolute; left: 0; top: 0; width: 72px; display: flex; flex-direction: column; align-items: center; gap: 30px; filter: drop-shadow(0 1px 4px rgba(0,0,0,.45)); }
+      .film-ic { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+      .film-ic svg { width: 62px; height: 62px; }
+      .film-ic span { font-family: "Heebo", sans-serif; font-weight: 600; font-size: 25px; color: #fff; line-height: 1; }
+      .film-bottom { position: absolute; left: 0; top: 0; font-family: "Heebo", sans-serif; color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.5); }
+      .film-row { display: flex; align-items: center; gap: 16px; direction: ltr; }
+      .film-row i { width: 74px; height: 74px; border-radius: 50%; border: 2px solid #fff; background-color: #888; flex: none; }
+      .film-row b { font-weight: 700; font-size: 32px; }
+      .film-follow { border: 2px solid rgba(255,255,255,.9); border-radius: 12px; padding: 4px 18px 6px; font-weight: 700; font-size: 28px; }
+      .film-cap { margin-top: 18px; font-size: 30px; direction: rtl; text-align: left; }
+      .film-audio { margin-top: 12px; font-size: 25px; opacity: .92; direction: rtl; text-align: left; }

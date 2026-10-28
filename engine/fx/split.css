@@ -1,0 +1,10 @@
+      /* split (the original split-headline) */
+      .split-card { position: absolute; left: 0; top: 0; width: 1080px; background: rgb(244,242,236); overflow: hidden; }
+      .split-bar { position: absolute; left: 0; bottom: 0; width: 1080px; }
+      .split-line { position: absolute; white-space: nowrap; direction: rtl; font-family: "Heebo", sans-serif; font-weight: 800; color: rgb(20,20,22); }
+      .split-w { position: relative; display: inline-block; }
+      .split-c { position: relative; display: inline; }
+      .split-t { display: inline; }
+      .split-hl { position: absolute; }
+      .split-pill { position: absolute; left: 0; top: 0; white-space: nowrap; direction: rtl; font-family: "Heebo", sans-serif; font-weight: 800; color: #fff;
+                    box-shadow: 0 4px 20px rgba(0,0,0,.31); }

@@ -1,0 +1,16 @@
+      /* chart (the original views chart) + studio: a cream panel on top, you in a rounded box below */
+      .pz-panel { position: absolute; left: 0; top: 0; width: 1080px; overflow: hidden; background-color: #f3eee4;
+                  background-image: linear-gradient(rgba(0,0,0,.045) 2px, transparent 2px), linear-gradient(90deg, rgba(0,0,0,.045) 2px, transparent 2px);
+                  background-size: 54px 54px; }
+      .pz-panel > div { position: absolute; }
+      .pz-hole { position: absolute; height: 2000px; box-shadow: 0 0 0 1800px #f3eee4; }
+      .chart-t1 { right: 70px; top: 40px; font-family: "Heebo", sans-serif; font-weight: 800; font-size: 66px; color: #17171a; direction: rtl; white-space: nowrap; }
+      .chart-t2 { right: 70px; top: 120px; font-family: "Heebo", sans-serif; font-weight: 800; font-size: 66px; color: #17171a; direction: rtl; white-space: nowrap; }
+      .chart-t2 span { font-weight: 300; padding-bottom: 2px; }
+      .chart-grid { left: 60px; width: 880px; height: 2px; background: rgba(0,0,0,.1); }
+      .chart-ax { left: 952px; width: 100px; text-align: right; font-family: "Rubik", sans-serif; font-weight: 500; font-size: 28px; color: #77736c; }
+      .chart-avg { left: 60px; width: 880px; height: 0; border-top: 3px dashed; opacity: .8; }
+      .chart-avgt { left: 62px; font-family: "Rubik", sans-serif; font-weight: 500; font-size: 28px; opacity: .55; direction: rtl; white-space: nowrap; }
+      .chart-bar { border-radius: 10px 10px 0 0; }
+      .chart-num { text-align: center; font-family: "Rubik", sans-serif; font-weight: 800; font-size: 40px; color: #17171a; letter-spacing: -1px; }
+      .chart-lab { text-align: center; font-family: "Heebo", sans-serif; font-weight: 600; font-size: 28px; color: #3a3833; direction: rtl; white-space: nowrap; }

@@ -1,0 +1,13 @@
+      /* todo (fx_todo): card (250,248,242,235) + shadow (14, 8, 90); 'ui' -> Heebo 600; amber title, grey counter, green ticks */
+      .todo-card { position: absolute; background: rgba(250,248,242,.92); box-shadow: 0 8px 28px rgba(0,0,0,.35); direction: rtl;
+                   font-family: "Heebo", sans-serif; font-weight: 600; }
+      .todo-title, .todo-count, .todo-item { position: absolute; white-space: nowrap; line-height: normal; }
+      .todo-title { color: rgb(200,140,20); }
+      .todo-count { color: rgb(120,120,120); }
+      .todo-item { color: rgb(22,22,24); }
+      .todo-box { position: absolute; border: 3px solid rgb(160,160,160); border-radius: 6px; }
+      .todo-box svg { position: absolute; left: -3px; top: -3px; width: calc(100% + 6px); height: calc(100% + 6px); display: none; overflow: visible; }
+      .todo-box polyline { fill: none; stroke: #fff; stroke-width: 4px; vector-effect: non-scaling-stroke; }
+      .todo-box.on { background: rgb(52,199,89); border-color: rgb(52,199,89); }
+      .todo-box.on svg { display: block; }
+      .todo-strike { position: absolute; height: 3px; background: rgb(22,22,24); }

@@ -1,0 +1,13 @@
+      /* pills (the original check-pills) */
+      .pills-room { background-color: rgb(238,241,245); background-size: 54px 54px;
+                    background-image: linear-gradient(90deg, rgb(219,223,230) 1px, transparent 1px), linear-gradient(rgb(219,223,230) 1px, transparent 1px); }
+      .pills-board { position: absolute; left: 0; top: 0; background: #fff; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,.275); direction: rtl; }
+      .pills-board > div { position: absolute; }
+      .pills-dot { border-radius: 50%; background: rgb(255,160,140); }
+      .pills-bt { white-space: nowrap; font-family: "Heebo", sans-serif; font-weight: 800; color: rgb(20,20,22); }
+      .pills-cell { background-size: cover; background-position: center 30%; }
+      .pills-pill { position: absolute; left: 0; top: 0; background: rgb(10,132,255); color: #fff; direction: rtl; text-align: right; white-space: nowrap;
+                    font-family: "Heebo", sans-serif; font-weight: 800; box-shadow: 0 5px 20px rgba(0,0,0,.353); }
+      .pills-pill svg { position: absolute; overflow: visible; }
+      .pills-cur { position: absolute; left: 0; top: 0; line-height: 0; }
+      .pills-cur svg { display: block; overflow: visible; filter: drop-shadow(0 3px 12px rgba(0,0,0,.43)); }

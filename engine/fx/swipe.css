@@ -1,0 +1,9 @@
+      /* swipe (fx_swipe): 7px white edge, white round handle '< >' (mono), serif INK labels on white pills (alpha 225) */
+      .swipe-edge { position: absolute; left: -3.5px; top: -140px; width: 7px; height: 2200px;
+                    background: linear-gradient(90deg, rgba(255,255,255,0), #fff 50%, rgba(255,255,255,0)); }
+      .swipe-knob { position: absolute; left: -37px; top: -37px; width: 74px; height: 74px; border-radius: 50%; background: #fff;
+                    box-shadow: 0 4px 16px rgba(0,0,0,.43); color: rgb(22,22,24); font-family: ui-monospace, Menlo, monospace; font-weight: 700;
+                    font-size: 25px; line-height: 74px; text-align: center; white-space: pre; direction: ltr; }
+      .swipe-tag { position: absolute; top: 1689.6px; transform: translate(-50%, -50%); height: 44px; padding: 0 18px; border-radius: 22px;
+                   background: rgba(255,255,255,.88); color: rgb(22,22,24); font-family: "Heebo", sans-serif; font-weight: 300; font-size: 32px;
+                   line-height: 44px; white-space: nowrap; direction: rtl; }
